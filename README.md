@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# FairFL-PID
-=======
+
 # Demystifying Local & Global Fairness Trade-offs in Federated Learning
 
 
@@ -53,4 +51,3 @@ url={https://openreview.net/forum?id=SBj2Qdhgew}
 }
 ```
 
->>>>>>> b80b16d (Initial commit of FairFL-PID project)
