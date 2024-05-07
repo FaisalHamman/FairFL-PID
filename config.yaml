@@ -1,0 +1,41 @@
+global_config:
+  seed: 457 
+  device: "cpu"
+  is_mp: True
+---
+data_config:
+  data_path: "./dataset/"
+  dataset_name: "Adult"
+  num_shards: 200
+  iid: False
+---
+fed_config:
+  C: 1
+  K: 2
+  R: 50
+  E: 10
+  B: 1000
+  criterion: torch.nn.BCELoss
+  optimizer: torch.optim.Adam
+---
+optim_config:
+  lr: 0.01
+  #momentum: 0.9
+---
+init_config:
+  init_type: "xavier"
+  init_gain: 1.0
+  gpu_ids: 0
+---
+model_config: 
+  name: TwoNN
+  in_features: 87
+  num_hiddens: 128
+  num_classes: 1
+  
+---
+log_config:
+  log_path: "./log/"
+  log_name:  "FL.log"
+  tb_port: 5252
+  tb_host: "0.0.0.0"
